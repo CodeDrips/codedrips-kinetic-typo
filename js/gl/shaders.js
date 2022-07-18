@@ -27,10 +27,10 @@ const torusFragment = /* glsl */ `
     vec2 repeat = -vec2(12., 3.);
     vec2 uv = fract(vUv * repeat - vec2(time, 0.));
     vec3 texture = texture2D(uTexture, uv).rgb;
-    // texture *= vec3(uv.x, uv.y, 0.);
+    texture *= vec3(uv.x, uv.y, 0.8);
 
     float fog = clamp(vPosition.z / 6., 0., 1.);
-    vec3 fragColor = mix(vec3(0.), texture, fog);
+    vec3 fragColor = mix(vec3(0.01), texture, fog);
 
     gl_FragColor = vec4(fragColor, 1.);
   }

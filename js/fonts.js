@@ -6,6 +6,8 @@ import file3 from '../assets/ArchivoBlack-Regular.fnt';
 import atlas3 from '../assets/ArchivoBlack-Regular.png';
 import file4 from '../assets/OpenSans-SemiBold.fnt';
 import atlas4 from '../assets/OpenSans-SemiBold.png';
+import file5 from '../assets/ProductSans-Bold.fnt';
+import atlas5 from '../assets/ProductSans-Bold.png';
 
 export default {
   file: {
@@ -13,6 +15,7 @@ export default {
     demo2: file2,
     demo3: file3,
     demo4: file4,
+    demo5: file5,
   },
 
   atlas: {
@@ -20,5 +23,6 @@ export default {
     demo2: atlas2,
     demo3: atlas3,
     demo4: atlas4,
+    demo5: atlas5,
   },
 };
